@@ -33,5 +33,19 @@ class Hello {
         System.out.println(longnum);
         ch++;
         System.out.println(ch);
+
+        // Type conversion - Casting 
+        int h = 10;
+        byte t = (byte) h;
+        System.out.println(t);
+
+        float u = 50.6f;
+        int i = (int) u;
+        System.out.println(i);
+
+        byte w = 10;
+        byte q = 40;
+        int res = w*q;
+        System.out.println(res);
     }
 }
