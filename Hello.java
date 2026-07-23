@@ -23,5 +23,15 @@ class Hello {
         char ch = 'H';
         // Boolean
         boolean isBig = true;
+
+        // Literals
+        double test = 23;
+        System.out.println(test);
+        int number = 0x7E;
+        System.out.println(number);
+        int longnum = 100_000_000;
+        System.out.println(longnum);
+        ch++;
+        System.out.println(ch);
     }
 }
