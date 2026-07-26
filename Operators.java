@@ -26,5 +26,10 @@ class Operators {
         System.out.println(y<b);
         System.out.println(y>=x);
         System.out.println(b!=x);
+
+        // logical operator 
+        System.out.println(y<b && c<0);
+        System.out.println(y>=x || y>5);
+        System.out.println(!(b!=x));
     }
 }
