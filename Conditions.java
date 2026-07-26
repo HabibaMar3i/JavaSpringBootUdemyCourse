@@ -1,7 +1,7 @@
 public class Conditions {
     public static void main(String a[]){
         // if else
-        int x = 5;
+        int x = 6;
         int y = 7;
         int z = 9;
         if(x>y)
@@ -20,5 +20,11 @@ public class Conditions {
             System.out.println("y is the greatest");
         else
             System.out.println("z is the greatest");
+
+
+        // ternary
+        boolean isEven; 
+        isEven = x%2==0 ? true : false;
+        System.out.println(isEven);
     }
 }
