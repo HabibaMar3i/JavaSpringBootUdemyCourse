@@ -17,6 +17,9 @@ class Loops{
         // for loop
         for(int k=1;k<=5;k++){
             System.out.println(k);
+            for (int m = 0; m < 2; m++) {
+                System.out.println("m "+m);
+            }
         }
     }
 }
