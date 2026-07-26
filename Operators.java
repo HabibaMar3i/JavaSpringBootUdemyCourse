@@ -21,5 +21,10 @@ class Operators {
         System.out.println(--y);
         System.out.println(x+=2);
         System.out.println(y%b);
+
+        // relational operator
+        System.out.println(y<b);
+        System.out.println(y>=x);
+        System.out.println(b!=x);
     }
 }
