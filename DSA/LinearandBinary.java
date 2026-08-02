@@ -1,15 +1,20 @@
 public class LinearandBinary {
     public static void main(String[] args) {
         int nums[] = {5,7,9,11,13};
-        int target = 7;
-        int result = BinarySearch(nums, target);
-        System.out.println("Found target at index " + result);
+        int target = 13;
+        int result = linearSearch(nums, target);
+        System.out.println("(Linear search) Found target at index " + result);
+        result = binarySearch(nums, target);
+        System.out.println("(Binary search) Found target at index " + result);
 
     }
     // Linear Search
-    public static int LinearSearch(int[] nums, int target){
+    public static int linearSearch(int[] nums, int target){
+        int steps = 0;
         for(int i=0; i<nums.length; i++){
+            steps++;
             if(target == nums[i]){
+                System.out.println("Linear search ended at: " + steps + " steps");
                 return i;          
             }
         }
@@ -17,14 +22,16 @@ public class LinearandBinary {
     }
 
     // Binary Search
-    public static int BinarySearch(int[] nums, int target){
+    public static int binarySearch(int[] nums, int target){
         int left = 0;
-        int right = nums.length;
-        
+        int right = nums.length-1;
+        int steps = 0;
         while(left<=right){
+            steps++;
             int mid = (left+right) /2;
 
             if(nums[mid] == target){
+                System.out.println("Binary search ended at: " + steps + " steps");
                 return mid;
             }
             else if(target<nums[mid]){
