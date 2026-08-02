@@ -1,6 +1,7 @@
 public class LinearandBinary {
     public static void main(String[] args) {
-        int nums[] = {5,7,9,11,13};
+        // random array
+        int nums[] = new int[1000];
         int target = 13;
         int result = linearSearch(nums, target);
         System.out.println("(Linear search) Found target at index " + result);
@@ -18,6 +19,7 @@ public class LinearandBinary {
                 return i;          
             }
         }
+        System.out.println("Linear search ended at: " + steps + " steps");
         return -1;
     }
 
@@ -41,6 +43,7 @@ public class LinearandBinary {
                 left = mid+1;
             }
         }
+        System.out.println("Binary search ended at: " + steps + " steps");
         return -1;
     }
 }
