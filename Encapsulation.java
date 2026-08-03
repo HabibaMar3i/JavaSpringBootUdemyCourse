@@ -10,12 +10,13 @@ class Human{
         return age;
     }
 
-    public void setName(String n){
-        name = n;
+    public void setName(String name){
+        // Human obj = new Human();
+        this.name = name;
     }
 
-    public void setAge(int a){
-        age = a;
+    public void setAge(int age){
+        this.age = age;
     }
 }
 public class Encapsulation {
