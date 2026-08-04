@@ -6,6 +6,11 @@ class Mobile{
     public void show(){
         System.out.println("name: " + name + " brand: " + brand + " price: " + price);
     }
+
+    // static method 
+    public static void show1(Mobile obj){
+        System.out.println("name: " + name + " brand: " + obj.brand + " price: " + obj.price);
+    }
 }
 public class Static {
     public static void main(String[] args) {
@@ -19,5 +24,8 @@ public class Static {
         Mobile.name = "smartphone";
         mob1.show();
         mob2.show();
+
+        Mobile.show1(mob2);
+        // Mobile.show1() if there is not parameter and only static variable
     }
 }
