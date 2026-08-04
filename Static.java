@@ -20,6 +20,11 @@ class Mobile{
     public static void show1(Mobile obj){
         System.out.println("STATIC METHOD // name: " + name + " brand: " + obj.brand + " price: " + obj.price);
     }
+
+    public void testAnon(){
+        
+        System.out.println("In testAnon");
+    }
 }
 public class Static {
     public static void main(String[] args) throws ClassNotFoundException {
@@ -38,5 +43,12 @@ public class Static {
         // Mobile.show1() if there is not parameter and only static variable
 
         Class.forName("Mobile"); // to initiate class without any object
+
+        int num;
+        num = 6;
+
+        // Anonymous object
+        new Mobile();
+        new Mobile().testAnon();
     }
 }
