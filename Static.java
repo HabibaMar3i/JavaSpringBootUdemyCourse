@@ -3,6 +3,15 @@ class Mobile{
     String brand;
     int price;
 
+    static{
+        name = "test";
+        System.out.println("In static");
+    }
+
+    public Mobile(){
+        System.out.println("In constructor");
+    }
+
     public void show(){
         System.out.println("name: " + name + " brand: " + brand + " price: " + price);
     }
@@ -13,7 +22,7 @@ class Mobile{
     }
 }
 public class Static {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         Mobile mob1 = new Mobile();
         mob1.brand = "apple";
         mob1.price = 1500;
@@ -27,5 +36,7 @@ public class Static {
 
         Mobile.show1(mob2);
         // Mobile.show1() if there is not parameter and only static variable
+
+        Class.forName("Mobile"); // to initiate class without any object
     }
 }
